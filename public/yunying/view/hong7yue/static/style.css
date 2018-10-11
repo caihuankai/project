@@ -1,0 +1,34 @@
+body{
+    /* overflow: scroll; */
+    /* width: 1920px; */
+    /* background: #1e1513;    */
+    margin: 0; 
+    font-family: "Microsoft YaHei";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+li{
+    font-size: 0px;
+    position: relative;
+}
+main{
+    margin: auto;
+    max-width: 750px;
+}
+li a{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem /* 400/100 */;
+    height: .7rem /* 70/100 */;
+    bottom: .35rem /* 20/100 */;
+}

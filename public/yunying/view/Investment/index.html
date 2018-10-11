@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加微信学投资</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        .touzi-container{
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .touzi-container img{
+            display: block;
+            width: 100%;
+        }
+        .btn{
+            position: relative;
+        }
+        .btn>.button{
+            position: absolute;
+            top: 14px;
+            left: 50%;
+            width: 50%;
+            transform: translateX(-50%);
+            animation: btn 1.2s linear infinite;
+        }     
+        .popup{
+            width: 100%;
+            height: 100%;
+            max-width: 750px;
+            position: fixed;
+            left: 50%;
+            top: 0;
+            background: rgba(0,0,0,.7);
+            display: none;
+            transform:translateX(-50%);
+        }
+        .popup.show{
+            display: block;
+        }
+        .popup .main{
+            text-align: center;
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 47.5%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+        .popup .main>img{
+            width: 100%;
+            display: block;
+        }
+        .popup .main>span{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(./images/close.png) no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 2px;
+            right: -20px;
+        }
+        .popup .main .erCode{
+            background: #fff;
+            width: 94%;
+            float: right;
+            display: inline-block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .popup .main .erCode>img{
+            width: 80%;
+        }
+        .popup .main .erCode>p{
+            color: #DD3B35;
+            margin-top: 0;
+        }
+        .popup .main .erCode>p>span{
+            color: #fff;
+            background: #DD3B35;
+            border-radius: 5px;
+            padding: 0 10px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            max-width: 750px;
+            background:rgba(0,0,0,.8);
+            padding: 10px 46px;
+            box-sizing: border-box;
+            transform:translateX(-50%);
+        }
+        footer>img{
+            float: right;
+            width:64px;
+            height: 64px;
+            margin-top: 3px;
+        }
+        footer .word>p{
+            margin: 0;
+            color: #DD3B35;
+        }
+        footer .word>span{
+            color: #fff;
+            background: #DD3B35;
+            border-radius: 20px;
+            padding: 0 10px;
+            margin: 4px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main class="touzi-container">
+        <img src="./images/index-01.png" alt="">
+        <section class="button">
+            <img src="./images/index-02.png" alt="">
+        </section>
+        <img src="./images/index-03.png" alt="">
+        <img src="./images/index-04.png" alt="">
+        <img src="./images/index-05.png" alt="">
+        <img src="./images/index-06.png" alt="">
+        <section class="button2">
+            <img src="./images/index-07.png" alt="">
+        </section>
+        <img src="./images/index-08.png" alt="">
+        <img src="./images/index-09.png" alt="">
+        <img src="./images/index-10.png" alt="">
+        <img src="./images/index-11.png" alt="">
+        <img src="./images/index-12.png" alt="">
+    </main>
+    <!-- 底部固定 -->
+    <footer>
+        <img class="codeImg" src="./images/QrCode.png">
+        <section class="word">
+            <p>添加微信，免费领涨停牛股</p>
+            <span class="idName">mzd0405</span>
+            <p>↑长按复制，去微信添加好友↑</p>
+        </section>
+    </footer>
+    <!-- 弹窗 -->
+    <section class="popup">
+        <div class="main">
+            <img src="./images/popup-head.png">
+            <span class="close"></span>
+            <section class="erCode">
+                <img class="codeImg" src="./images/QrCode.png">
+                <p>或手动添加微信&nbsp;&nbsp;<span class="idName">seedeee</span></p>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload = function(){
+        getID();
+        var $btn = document.getElementsByClassName('button')[0];
+        var $btn2 = document.getElementsByClassName('button2')[0];
+        var $popup = document.getElementsByClassName('popup')[0];
+        var $close = document.getElementsByClassName('close')[0];
+        $btn.onclick = function () {
+           $popup.className ='popup show';
+        }
+        $btn2.onclick = function () {
+           $popup.className ='popup show';
+        }
+        $close.onclick = function () {
+	        $popup.className ='popup';
+        }
+        function getID(){
+            var id = window.location.search.split('=')[1];
+            if(!id){
+                id = 'mzd0405';
+            }
+            $codeImg = document.getElementsByClassName('codeImg');
+            $idName = document.getElementsByClassName('idName');
+            for (var i = 0; i < $idName.length; i++) {
+                $idName[i].innerText = id;
+                $codeImg[i].src = './images/qrCode/'+id + '.jpg';
+            }
+        }
+    }
+</script>

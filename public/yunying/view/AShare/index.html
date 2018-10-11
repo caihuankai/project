@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A股入摩引爆资金浪潮</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        .xinjiyu{
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+        .menu{
+            padding: 0;
+            margin: 0;
+        }
+        .menu li{
+            width: 50%;
+            float: left;
+            list-style: none;
+        }
+        .clearfix::after{
+            content:"";
+            clear:both;
+            display:block;
+            height:0;
+            overflow:hidden;
+            visibility:hidden;
+        }
+        .clearfix{
+            zoom:1;
+        }
+        .vedeo-block{
+            width: 100%;
+            height: 252px;
+            background: url(./img/index_10.png);
+            background-size: 100% 100%;
+            padding: 12px 15px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    <main class="xinjiyu">
+        <img src="./img/index_1.png">
+        <img src="./img/index_2.png">
+        <img src="./img/index_3.png">
+        <img src="./img/index_4.png">
+        <img src="./img/index_5.png">
+        <img src="./img/index_6.png">
+        <img src="./img/index_7.png">
+        <img src="./img/index_8.png">
+        <img src="./img/index_9.png">
+        <section class="vedeo-block">
+            <iframe frameborder="0" width="100%" height="100%" src="https://v.qq.com/iframe/player.html?vid=l06606wjvvp&tiny=0&auto=0" allowfullscreen></iframe>
+        </section>
+        <img src="./img/index_11.png">
+        <img src="./img/index_12.png">
+        <img src="./img/index_13.png">
+        <img src="./img/index_14.png">
+        <ul class="menu clearfix">
+            <li><a href="http://wechat.lexinamc.cn/#/personalCenter/course/4466&1706874"><img src="./img/index_15.png"></a></li>
+            <li><a href="http://wechat.lexinamc.cn/#/personalCenter/course/4529&1706874"><img src="./img/index_16.png"></a></li>
+            <li><a href="http://wechat.lexinamc.cn/#/personalCenter/course/4550&1706874"><img src="./img/index_17.png"></a></li>
+            <li><a href="http://wechat.lexinamc.cn/#/periodical/83"><img src="./img/index_18.png"></a></li>
+        </ul>
+        <img src="./img/index_19.png">
+    </main>
+    
+</body>
+</html>
+
+<script src='./node_modules/jquery/dist/jquery.min.js'></script>
+<script type="text/javascript">
+    window.onload = function(){
+        getSign();
+        function getSign(){
+            $.ajax({
+                type:'POST',
+                dataType:'json',
+                url:'http://wechat.lexinamc.cn/Jssdk/getYYSignPackage/',
+                data:{
+                    /*user_id:0,
+                    url:window.location.href*/
+                },
+                success:function(sign){
+                    wx.config({  
+                
+                        appId: sign.data.appId,  
+                        timestamp: sign.data.timestamp,  
+                        nonceStr: sign.data.nonceStr,  
+                        signature:  sign.data.signature,  
+                        jsApiList: [  
+                            // 所有要调用的 API 都要加到这个列表中  
+                            'checkJsApi',  
+                            'onMenuShareTimeline',  
+                            'onMenuShareAppMessage' 
+                        ]  
+                    });  
+                    wx.ready(function () {  // 在这里调用 API  
+                    //获取“分享到朋友圈”按钮点击状态及自定义分享内容接口  
+                    wx.onMenuShareTimeline({  
+                        title: 'A股入摩引爆资金浪潮', // 分享标题  
+                        link: window.location.href, // 分享链接  
+                        imgUrl: 'http://wechat.lexinamc.cn/images/logo.png', // 分享图标  
+                        success: function () {  
+                            // 用户确认分享后执行的回调函数  
+                        },  
+                        cancel: function () {  
+                            // 用户取消分享后执行的回调函数  
+                        }  
+                    });  
+                    //获取“分享给朋友”按钮点击状态及自定义分享内容接口  
+                    wx.onMenuShareAppMessage({  
+                        title: 'A股入摩引爆资金浪潮', // 分享标题  
+                        desc: 'A股入摩引爆资金浪潮', // 分享描述  
+                        link: window.location.href, // 分享链接  
+                        imgUrl: 'http://wechat.lexinamc.cn/images/logo.png', // 分享图标  
+                        type: 'link', // 分享类型,music、video或link，不填默认为link  
+                        dataUrl: '', //如果type是music或video，则要提供数据链接，默认为空  
+                    });  
+    
+    });  
+                }
+            })
+        }
+    }
+</script>

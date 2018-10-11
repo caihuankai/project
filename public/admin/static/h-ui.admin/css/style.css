@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* 你自己的样式==重置默认样式 */
+
+.line-h {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+/*正常、异常颜色区分*/
+
+.hint-green {
+    color: #008800;
+}
+
+.hint-red {
+    color: #f60505;
+}
+
+a {
+    color: #333
+}
+
+a:hover, a:focus, .maincolor, .maincolor a {
+    color: #06c
+}
+
+.navbar {
+    background: #3f526d;
+    height: 100px;
+}
+
+.navbar .logo {
+    height: 100px;
+    line-height: 100px;
+    margin-right: 2px; /*background: url(../images/top_nav_line.jpg) no-repeat right bottom;*/
+}
+
+/*顶部导航*/
+
+.navbar-logo, .navbar-logo-m, .navbar-slogan, .navbar-userbar {
+    color: #637fa6;
+}
+
+/*logo 及 用户信息文字颜色*/
+
+.navbar-logo:hover, .navbar-logo-m:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.navbar-nav > ul.main-menu > li {
+    background: url(../images/top_nav_line.png) no-repeat right bottom;
+}
+
+/*顶部导航文字颜色*/
+
+.navbar-userbar > ul > > li, .navbar-userbar > ul > > li > a {
+    color: #637fa6
+}
+
+.Hui-aside {
+    background: #3f526d;
+    top: 100px;
+    line-height: 100px;
+}
+
+/*侧边栏*/
+
+.Hui-aside .menu_dropdown dt {
+    color: #ccc;
+}
+
+/*左侧二级导航菜单*/
+
+.Hui-aside .menu_dropdown dt:hover {
+    color: #fff
+}
+
+.Hui-aside .menu_dropdown dt:hover [class^="icon-"] {
+    color: #7e8795
+}
+
+.Hui-aside .menu_dropdown li a {
+    color: #ccc;
+    border-bottom: 1px solid #374a65
+}
+
+.Hui-aside .menu_dropdown li a:hover {
+    color: #fff;
+    background-color: #30435e;
+}
+
+.Hui-aside .menu_dropdown li.current a, .menu_dropdown li.current a:hover {
+    color: #148cf1
+}
+
+.Hui-aside .menu_dropdown dt .Hui-iconfont {
+    color: #ccc;
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.Hui-aside .menu_dropdown dt .menu_dropdown-arrow {
+    color: #989da4;
+}
+
+.dislpayArrow a {
+    background: url(../images/icon_arrow.png) no-repeat 0 0;
+}
+
+.Hui-aside .menu_dropdown dt {
+    border-color: #283445;
+}
+
+.Hui-aside .menu_dropdown dd li a {
+    padding-left: 30px;
+}
+
+.Hui-aside .menu_dropdown dd ul {
+    background: #364861;
+    padding: 3px 5px;
+}
+
+/* 顶部导航 */
+
+#Hui-msg .badge {
+    top: 13px;
+}
+
+.navbar-nav > ul.main-menu > li, .navbar-nav > ul.main-menu > li > a {
+    width: 100px;
+    height: 100px;
+    line-height: 43px;
+    padding: 0;
+    color: #cbcaca;
+}
+
+.navbar-nav > ul.main-menu > li > a:hover {
+    background: none;
+    color: #f5f5f5;
+}
+
+.navbar-nav > ul.main-menu > li.current > a:link, .navbar-nav > ul.main-menu > li.current > a:visited {
+    background: none;
+    color: #f5f5f5;
+}
+
+.iconfont-size {
+    font-size: 36px;
+    position: relative;
+    top: 15px;
+}
+
+.container-fluid, .navbar-wrapper {
+    height: 100px;
+}
+
+.Hui-article-box {
+    top: 100px;
+}
+
+.nav-toggle, a.nav-toggle {
+    top: 8px;
+}
+
+.clear-lp {
+    padding-left: 0;
+}
+
+.Hui-aside .menu_dropdown dt.selected .menu_dropdown-arrow {
+    transform: rotate(-90deg);
+}
+
+.menu > li > a:hover, .menu > li > a:focus, .menu > li.open > a {
+    text-decoration: none;
+    background-color: #3a4d68;
+    border-radius: 0 5px 0 0;
+}
+
+.menu > li > a {
+    display: block;
+    border-bottom: solid 0px #f2f2f2;
+    padding: 5px 14px;
+    line-height: 1.8;
+    text-align: left;
+    font-weight: normal;
+    white-space: nowrap;
+    vertical-align: top;
+    color: #fff;
+}
+
+.dropDown.open > .dropDown-menu {
+    background-color: #485c78;
+    border: 1px solid #485c78;
+    border-radius: 0 5px 0 0;
+}
+
+/*顶部导航-右*/
+
+#Hui-userbar {
+    top: 28px;
+    right: 4em;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    background: #485c78;
+    border-radius: 5px;
+}
+
+#Hui-userbar > ul {
+    height: 40px;
+}
+
+#Hui-userbar > ul > li {
+    height: 40px;
+    line-height: 40px;
+}
+
+#Hui-userbar > ul > li > a {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 0;
+}
+
+#Hui-userbar > ul > li > a:hover, #Hui-userbar > ul > li > a:focus, #Hui-userbar > ul > li > a {
+    background: none;
+}
+
+@media (max-width: 767px) {
+    .navbar .logo {
+        height: 70px !important;
+        line-height: 70px !important;
+    }
+
+    .container-fluid, .navbar-wrapper {
+        height: 70px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .Hui-aside {
+        top: 70px;
+    }
+
+    .navbar-wrapper {
+        height: 70px !important;
+    }
+
+    .page-container {
+        padding: 40px 15px 20px;
+    }
+}
+
+.btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group {
+    margin-left: 0;
+}
+
+a.btn.btn-success.radius.r {
+    position: relative;
+    top: 2px;
+    right: 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+.page-container {
+    padding: 0 20px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.upload-a-btn {
+    margin: 2px 4px;
+}
+
+/*解决默认hide的important*/
+.hide-ele {
+    display: none;
+}
+
+.min-btn {
+    width: 16px;
+    height: 16px;
+}

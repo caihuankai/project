@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title class="site_title">每日领取当日操盘策略 </title>
+
+		<meta name="keywords" content="" />
+
+		<meta name="description" content="" />
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script type="text/javascript" src="js/jq.js"></script>
+		<script>
+
+		$(function(){
+            function GetRequest() {   
+                var url = location.search; //获取url中"?"符后的字串   
+                var theRequest = new Object();   
+                // if (url.indexOf("?") != -1) {   
+                    var str = url.substr(1);   
+                    theRequest = str.split("=")[1];   
+                    // for(var i = 0; i < strs.length; i ++) {   
+                    //     theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+                    // }   
+                // }   
+                // alert(str.split("=")[1])
+                return theRequest;   
+                }   
+            var Arr = ["Alan90219",'chenLL0724','mzd0405','niunu567890','shilixia75'];
+            var Arr1 = ["AAA158AAA666",'dcl888xy','dcl123654987','dcltzjy-888','mz666518'];
+            
+            var weixinid = GetRequest();
+			// var n = Math.floor(Math.random() * Arr.length + 1) - 1;
+
+			// var weixinid = Arr[n];
+            
+            if(Arr1.indexOf(weixinid) != -1){
+                var wximg = "<img src='./weix/" + weixinid + ".png' >";
+
+			    var myweixin = "<img src='./weix/" + weixinid + ".png' >";
+            }else if(Arr.indexOf(weixinid) != -1){
+                var wximg = "<img src='./weix/" + weixinid + ".jpg' >";
+
+			    var myweixin = "<img src='./weix/" + weixinid + ".jpg' >";
+            }else{
+                var weixinid = 'Alan90219';
+                var wximg = "<img src='./weix/" + weixinid + ".jpg' >";
+
+			    var myweixin = "<img src='./weix/" + weixinid + ".jpg' >";
+            }
+			
+
+			$(".weixinid").text(weixinid);
+
+			$(".wximg").html(wximg);
+
+			$(".myweixin").html(myweixin);
+		})
+
+	</script>
+
+	</head>
+<body>
+
+        <div class="topban">
+
+            <div class="dx1"></div>
+
+            <div class="dx2">
+
+            	<div class="dx2Wrap">
+
+	            	<div class="dx2Left">
+
+	        			<div class="name-tabs">
+
+							<div class="bd">
+
+									<ul>
+
+										<li><span class="li1">60***5</span><span class="li2">30***6</span></li>
+
+										<li><span class="li1">00***8</span><span class="li2">00***5</span></li>
+
+			                            <li><span class="li1">60***0</span><span class="li2">60***3</span></li>
+
+										<li><span class="li1">60***4</span><span class="li2">00***7</span></li>
+
+										<li><span class="li1">30***5</span><span class="li2">00***2</span></li>
+
+									</ul>
+
+							</div>
+
+						</div>
+
+	            	</div>
+
+	            	<div class="dx2Right">
+
+	            		<div class="qrBox"><div class="codeimg"><span class="wximg" style=" margin-top:10px;"></span></div></div>
+
+	            		<div class="wxh1 qq-groupNo title" onclick="ga('send','event', createUrlStr(),'长按复制微信号')"><span class="weixinid"></span>
+
+</div>
+
+	            	</div>
+
+	            	<div style="clear:both"></div>
+
+	            </div>
+
+            </div>
+
+        </div>    
+
+        <ul class="free" id="free">
+
+            <li class="free1">
+
+            	<img class="freeIcon" src="images/icon_01.png"/>
+
+            	<p class="freeP1">实战技巧</p>
+
+            	<p class="freeP2">2018年资深实战分析师<br/>亲授操盘技巧</p>
+
+            	<div class="freeBtnBox">
+
+            		<span class="freeBtn">免费咨询</span>
+
+            	</div>
+
+            </li>
+
+            <li class="free1 free2">
+
+            	<img class="freeIcon" src="images/icon_02.png"/>
+
+            	<p class="freeP1">提示买卖良机</p>
+
+            	<p class="freeP2">不盯盘也能轻<br/>松低买高卖</p>
+
+            	<div class="freeBtnBox">
+
+            		<span class="freeBtn">免费领取</span>
+
+            	</div>
+
+            </li>
+
+            <li class="free1 free2">
+
+            	<img class="freeIcon" src="images/icon_03.png"/>
+
+            	<p class="freeP1">热点板块</p>
+
+            	<p class="freeP2">独家股市研判<br/>内附高手操盘战术</p>
+
+            	<div class="freeBtnBox">
+
+            		<span class="freeBtn">免费诊断</span>
+
+            	</div>
+
+            </li>
+
+            <li class="free1 free2">
+
+            	<img class="freeIcon" src="images/icon_04.png"/>
+
+            	<p class="freeP1">直播分析</p>
+
+            	<p class="freeP2">全天候直播<br/>提醒盘中建仓良机</p>
+
+            	<div class="freeBtnBox">
+
+            		<span class="freeBtn">免费体验</span>
+
+            	</div>
+
+            </li>
+
+            <div style="clear:both"></div>
+
+        </ul>
+
+        <div class="dx4">
+
+        	<div class="dx4Img">
+
+        	</div>
+
+        </div>
+
+        <div class="wrap1">
+
+        	<div class="dx5">
+
+        		<p>5月好股</p>
+
+        	</div>
+
+        	<table cellpadding="0" cellspacing="0">
+
+					<tbody><tr>
+
+					 <th>股票代码</th>
+
+					 <th>股票名称</th>
+
+					 <th>持股天数</th> 
+
+					 <th>波动空间</th>
+
+					 <th>分享理由</th>
+
+					
+
+					</tr>
+
+					<tr>
+
+					 <td class="first_td">600887</td>
+
+					 <td>伊利股份</td>
+
+					 <td>7</td>
+
+					 <td>11.20%</td>
+
+					 <td>蓝筹</td>					 
+
+					 
+
+					</tr>
+
+					<tr class="tr1">
+
+					 <td class="first_td">600487</td>
+
+					 <td>亨通科技</td>
+
+					 <td>10</td>
+
+					 <td>12.70%</td>
+
+					 <td>4G5G</td>					 
+
+					 
+
+					</tr>
+
+					<tr>
+
+					 <td class="first_td">600584</td>
+
+					 <td>长电科技</td>
+
+					 <td>10</td>
+
+					 <td>14.6%</td>
+
+					 <td>苹果概念</td>					 
+
+					
+
+					</tr>
+
+					<tr class="tr1">
+
+					 <td class="first_td">300343</td>
+
+					 <td>联创互联</td>
+
+					 <td>3</td>
+
+					 <td>6.77% </td>
+
+					 <td>互联网</td>					 
+
+					
+
+					</tr>
+
+					<tr>				
+
+				</tr></tbody></table>
+
+				
+
+				<div class="dx5">
+
+        			<p>好股回顾</p>
+
+				</div>
+
+				<div id="lb">
+
+        	    	<ul class="lbTit">
+
+        	    		<li>锂电池</li>
+
+        	    		<li>国产芯片</li>
+
+        	    		<li>5G</li>
+
+        	    		<div style="clear:both"></div>
+
+        	    	</ul>
+
+        	    	<div class="pic" id="pic"><img src="#"/></div>
+
+        	    </div>
+
+        	   
+
+</div> 
+
+            <div class="wrap2">
+
+            	<div class="dx6">
+
+            		<div class="codeimg"><div class="qrBox2"> <span class="wximg" style=" margin-top:10px;"></span></div></div>
+
+            	</div>
+
+            	
+
+            </div>
+
+            <div style="background:#ab0f10;color:#ff0;width:100%;height:300px;text-align:center;font-size:50px;min-width:1000px;">
+
+            	<p style="line-height:80px;">添加微信，领强势好股</p>
+
+            	<p style="background:#ff0;width:50%;height:100px;margin:0 auto;color:#000;line-height:100px;border-radius:20px;"><span class="weixinid" style="font-size:60px;"></span></p>
+
+            	<p style="line-height:80px;">↑长按复制，去微信添加好友↑</p>
+
+            </div>
+
+
+
+        	<div class="footer">
+
+        	<p>投资有风险，入市需谨慎</p>
+        	<p>广州圣禾网络科技有限公司</p>
+			</div>
+
+
+	</div>
+
+
+</div>
+
+
+
+<!--弹窗-->
+
+            <div class="tc" id="tc">
+
+            	<div class="tcBox">
+
+            		<div class="tc1">
+
+            			<div class="closeBox"><div class='close' id="close"></div></div>
+
+            			<p>手机微信扫一扫<br/><span>加入短线牛人圈</span></p>
+
+            		</div>
+
+            		<div class="qrBox3">
+
+            			<span class="wximg" style=" margin-top:10px;"></span>
+
+            		</div>
+
+            		<p class="tcTip">立享<span>多重免费</span>惊喜</p>
+
+            	</div>
+
+            	
+
+			</div>
+
+</body>	 
+
+		
+
+	<!-- <script type="text/javascript" src="js/jquery.superslide.2.1.1.source.js"></script> -->
+
+	<script>
+
+	   var oLb=document.getElementById("lb");
+
+	   var oUl=oLb.getElementsByTagName("ul")[0];
+
+	   var aLi=oUl.getElementsByTagName("li");
+
+	   var oPic=document.getElementById("pic");
+
+	   var oImg=oPic.getElementsByTagName("img")[0];
+
+	   arr=["images/lb1.jpg","images/lb2.jpg","images/lb3.jpg"]
+
+	   var num=0;
+
+	   var i=0;
+
+//	   初始化
+
+        aLi[num].className="active";
+
+        oImg.src=arr[num];
+
+        ShowTime();
+
+
+
+	       for(var j=0;j<aLi.length;j++){
+
+	       	    aLi[j].index=j;
+
+		       	aLi[j].onclick=function(){
+
+		       		clearInterval(timer);
+
+		       		for(var n=0;n<aLi.length;n++){
+
+		       			aLi[n].className="";
+
+		       		}
+
+		       		this.className="active";
+
+		       		oImg.src=arr[this.index];
+
+		       		i=this.index;
+
+		       		ShowTime();
+
+		       	};
+
+	        }
+
+	        function ShowTime(){
+
+		        timer=setInterval(function(){
+
+					i++;
+
+					if(i==3){i=0;}
+
+		       		for(var n=0;n<aLi.length;n++){
+
+		       			aLi[n].className="";
+
+		       		}
+
+		       		aLi[i].className="active";
+
+		       		oImg.src=arr[i];
+
+			    },3000);
+
+		    }
+
+	</script>
+
+	<script>
+
+        // $(".name-tabs").slide({mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:1});//数据滚动
+
+	</script>
+
+	<script>
+
+	var oTc=document.getElementById("tc");
+
+	var oClose=document.getElementById("close");
+
+	var oFree=document.getElementById("free");
+
+	var aFreeBtn=oFree.getElementsByTagName("span");
+
+	for(var nun=0;nun<aFreeBtn.length;nun++){
+
+		aFreeBtn[nun].onclick=function(){
+
+			oTc.style.display="block";
+
+		}
+
+	}
+
+	oClose.onclick=function(){
+
+		oTc.style.display="none";
+
+	}
+
+	</script>
+<script src="https://s19.cnzz.com/z_stat.php?id=1273671430&web_id=1273671430" language="JavaScript"></script>
+</html>
+
+</script>

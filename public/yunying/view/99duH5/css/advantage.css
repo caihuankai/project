@@ -1,0 +1,182 @@
+.advantage-container{
+    max-width: 750px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: .88rem;
+    background: #ffffff;
+}
+.advantage-container nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    height: .9rem /* 90/100 */;
+    align-items: center;
+    z-index: 111;
+}
+.advantage-container nav a.active{
+    background: #e03a00;
+}
+.advantage-container nav a{
+    flex:1;
+    text-align: center;
+    background: #ff5c26;
+    height: 100%;
+    line-height: 0.9rem;
+    color:#fff;
+}
+.advantage-container .header{
+    overflow: hidden;
+    padding-top: .9rem;
+    padding-bottom: .63rem;
+    text-align: center;
+}
+.advantage-container .header>h1{
+    font-size: .6rem;
+    color: #353535;
+
+}
+.advantage-container .header>h4{
+    padding-top: .18rem;
+    padding-bottom: .33rem;
+    font-size: .28rem;
+    color: #353535;
+}
+.advantage-container .header>p{
+    font-size: .24rem;
+    color: #353535;
+}
+.advantage-container .header .btn{
+    width: 4.6rem;
+    height: .88rem;
+    background: #ff6935;
+    border-radius: .44rem;
+    color: #ffffff;
+    font-size: .36rem;
+    margin:.63rem auto 0 auto;
+    line-height: .88rem;
+    display: block;
+}
+.advantage-container .header .btn>span:before{
+    content: '';
+    display: inline-block;
+    width: .44rem;
+    height: .44rem;
+    background: url("/images/phone_white_icon.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-right: .16rem;
+    vertical-align: sub;
+}
+.advantage-container .team-list{
+    padding:0 .24rem;
+}
+.advantage-container .team-list ul{
+
+}
+.advantage-container .team-list ul li{
+    width:calc((100% - .24rem)/2);
+    float: left;
+    text-align: center;
+    background: #f2f2f2;
+}
+.advantage-container .team-list ul li:nth-child(1),
+.advantage-container .team-list ul li:nth-child(2){
+    margin-bottom: .24rem;
+}
+.advantage-container .team-list ul li:nth-child(2n){
+    margin-left: .24rem;
+}
+.advantage-container .team-list ul li .cover{
+    width: 100%;
+    display: block;
+}
+.advantage-container .team-list ul li h4{
+    font-size: .28rem;
+    color: #353535;
+    margin-top: .32rem;
+    margin-bottom: .24rem;
+}
+.advantage-container .team-list ul li p{
+    font-size: .24rem;
+    color: #888888;
+    margin-bottom: .32rem;
+}
+.advantage-container .advantage-part{
+    padding: 0 .24rem;
+    margin-top: .6rem;
+}
+.advantage-container .advantage-part .title{
+    width: 100%;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #ff6935;
+}
+.advantage-container .advantage-part .title>span{
+    font-size: .3rem;
+    color: #353535;
+    padding-right: .4rem;
+    padding-bottom: .16rem;
+    border-bottom: 2px solid #ff6935;
+}
+.advantage-container .advantage-part>p {
+    margin-top: .24rem;
+    font-size: .28rem;
+    color: #353535;
+}
+.advantage-container .advantage-part>img{
+    width: 100%;
+    margin-top: .24rem;
+}
+.advantage-container .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: url("/images/bottom_bg.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.advantage-container .footer.hide{
+    display: none;
+}
+.advantage-container .footer .box{
+    padding:.24rem 0 .24rem .48rem;
+    color: #ffffff;
+    position: relative;
+}
+.advantage-container .footer .box .qrCode{
+    float: left;
+    width: 1.61rem;
+    height: 1.61rem;
+    margin-right: .48rem;
+}
+.advantage-container .footer .box .contact{
+    min-height:1.51rem;
+    margin-top: .14rem;
+}
+.advantage-container .footer .box .contact>p{
+    font-size: .28rem;
+}
+.advantage-container .footer .box .contact>a{
+    width: 1.6rem;
+    height: .5rem;
+    background: #ffffff;
+    color: #ff6935;
+    margin-right: .2rem;
+    line-height: .5rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: .25rem;
+    margin-top: .2rem;
+}
+.advantage-container .footer .box .close-footer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: .44rem;
+    height: .44rem;
+    background: url("/images/close_button.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}

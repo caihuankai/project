@@ -1,0 +1,289 @@
+body{
+    /* overflow: scroll; */
+    /* width: 1920px; */
+    background: #1e1513;   
+    margin: 0; 
+    font-family: "Microsoft YaHei";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+header{
+    width:100%;
+    width: 100%;
+    position:relative ;
+    z-index: 11;
+    height: 742px;
+    background: url(images/t01.png) center center no-repeat;
+    background: 100% auto;
+}
+
+header .btn{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .btn img{
+    width: 263px;
+    height: 55px;
+    margin: auto;
+    cursor: pointer;
+}
+header .link{
+    position: absolute;
+    width: 1584px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .link a{
+    display: block;
+    height: 46px;
+    float: right;
+    margin-top: 60px;
+    margin-right: 90px;
+}
+header .link img{
+    width:151px;
+    height: 46px;
+   
+}
+.center-box{
+    width: 1584px;
+    margin: 0 auto;
+    height: 630px;
+    background: #e5bf7f;
+ 
+}
+.center-box .boxs{
+    height: 579px;
+    background: url(images/t03.png)  center 60px no-repeat;
+    background-size: cover;
+}
+.center-box .box{
+    width: 1190px;
+    z-index: 12;
+    margin: auto;
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+}
+.center-box .img-l{
+    width: 560px;
+    height: 574px;
+    z-index: 13;
+    
+}
+.center-box ul{
+    width: 615px;
+    margin:0;padding: 0;
+    z-index: 13;
+}
+.center-box li{
+    float: left;
+    height: 280px;
+    width: 300px;
+    background: #fff;
+    color: #000;
+}
+.center-box li:nth-child(2){
+    margin-left: 15px;
+}
+.center-box li:nth-child(4){
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.center-box li:nth-child(3){
+    margin-top: 15px;
+}
+.center-box li p{
+    padding:8px 15px 0;
+    font-size: 18px;
+    margin: 0;
+}
+/* 定制 */
+.footer {
+    width: 1584px;
+    margin: auto;
+    padding-top: 60px;
+    background: #fff;
+    padding-bottom:50px;
+}
+.footer h1{
+    margin: 0;
+    font-size: 32px;
+    color: #000;
+    
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+}
+.footer h1::before{
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    margin-right: 36px;
+    background: url(images/kuai1.png) center center no-repeat;
+    background-size: cover;
+
+}
+.footer h1::after{
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    margin-left: 36px;
+    background: url(images/kuai2.png) center center no-repeat;
+    background-size: cover;
+
+}
+.footer h2{
+    color: #646464;
+    font-size: 18px;
+    margin: 15px 0 60px;
+    text-align: center;
+    font-weight: normal;
+}
+.footer .box{
+    width:1190px;
+    margin: auto; 
+}
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer li{
+    width: 212px;
+    height: 390px;
+    text-align: center;
+    cursor: pointer;
+}
+.footer li section{
+    width: 100%;
+    height: 346px;
+    color: #fff;
+    padding: 20px 15px 0;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+.footer li h5{
+    font-size: 25px;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+    text-shadow: 3px 1px 6px rgba(0, 0, 0, .3);
+    font-weight: bold;
+
+}
+.footer li p{
+    font-size: 19px;
+    text-shadow: 2px 1px 6px rgba(0, 0, 0, .3);
+    line-height: 31px;
+    margin: 0;
+    padding: 0;
+
+}
+.footer li:nth-child(1) section{
+    background: url(images/1.png) center center no-repeat;
+    background-size: cover;
+}
+.footer li:nth-child(2) section{
+    background: url(images/2.png) center center no-repeat;
+    background-size: cover;
+}
+.footer li:nth-child(3) section{
+    background: url(images/3.png) center center no-repeat;
+    background-size: cover;
+}
+.footer li:nth-child(4) section{
+    background: url(images/4.png) center center no-repeat;
+    background-size: cover;
+}
+.footer li:nth-child(5) section{
+    background: url(images/5.png) center center no-repeat;
+    background-size: cover;
+   
+}
+.footer li span{
+    display: inline-block;
+    width: 144px;
+    margin: auto;
+    height: 36px;
+    background: url(images/button1.png) center no-repeat;
+    background-size: cover;
+
+}
+.footer li:hover span{
+    background: url(images/button2.png) center no-repeat;
+}
+.txt{
+    height: 100px;
+    /* line-height: 100px; */
+    color: #646464;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.txt p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+/* 二维码弹窗 */
+.v-model{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 111;
+    bottom: 0;
+    background: rgba(0, 0, 0, .9);
+    display: none;
+}
+.v-model .box{
+    margin: auto;
+    height: 100%;
+    width: 460px;
+ 
+    display: flex;
+    align-items: center;
+}
+.v-model .box >div{
+    position: relative;
+    width: 460px;
+}
+.v-model img{
+    width: 422px;
+
+    height: 366px;
+    
+}
+.v-model span{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    background: url(images/close.png) center center no-repeat;
+    background-size: cover;
+}

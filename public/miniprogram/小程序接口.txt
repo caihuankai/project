@@ -1,0 +1,316 @@
+﻿99学院首页---首页banner接口
+专题课页--专题课banner接口
+系列课页--系列课banner接口
+特训班页--特训班banner接口
+
+/College/getBanner
+
+需要参数：
+type：9：99学院banner,14：专题课列表-banner，17：系列课列表-banner，20：特训班列表-banner
+
+return：
+{
+	code: 200,
+	data: [
+	{
+		id: 1210,
+		imgUrl: "http://oqt46pvmm.bkt.clouddn.com/55a366dba9db0a31422dc85e8b7dbb74",	//图片地址
+		title: "首页banner",	//标题
+		relevanceType: 4,	//跳转类型	4：专题课；9：系列课；10：特训班预告页；11：特训班详情页；12：特训班回顾页
+		relevanceId: "8214"		//跳转课程id
+	},
+	{
+		id: 1158,
+		imgUrl: "http://oqt46pvmm.bkt.clouddn.com/9337ad05c0f2d74e62a90441b473bd83",
+		title: "99学院首页bannertest1",
+		relevanceType: 4,
+		relevanceId: "1"
+	},
+	{
+		id: 1112,
+		imgUrl: "http://oqt46pvmm.bkt.clouddn.com/3c22bf535d686fa8833a04afe14404ee",
+		title: "APP图片",
+		relevanceType: 4,
+		relevanceId: "3"
+	}
+	],
+	msg: ""
+}
+
+
+
+
+99学院首页--热门学习接口
+专题页-专题研究接口
+专题页-回顾接口
+特训班列表-最新接口
+
+/College/getCourseList
+
+需要参数：
+type ： 12：99学院首页-热门学习，15：专题页-专题研究，16：专题页-回顾，21：特训班页-最新，22：特训班页-回顾
+page：  页码
+limit：每页条数
+
+   * @param  [type]  $type  10：99学院首页-最新，11：99学院首页-五分钟解盘，12：99学院首页-热门学习，13：99学院首页-本周热销，15：专题课列表-专题研究，16：专题课列表-回顾，18：系列课列表-推荐，21：特训班列表-最新，22：特训班列表-回顾，23：相关课程推荐',
+
+return:  
+{
+code: 200,
+data: [
+	{
+		id : id
+		imgUrl : //图片地址
+		title ： //标题
+		relevanceType ： //跳转类型	4：专题课；9：系列课；10：特训班预告页；11：特训班详情页；12：特训班回顾页
+		relevanceId ：//跳转课程id,
+		type: //课程类型，1为专题课程，2为系列课程，3为特训课,
+		form: //课程形式，1为图文语音（普通），2为视频直播,
+		level: //课程等级 0：免费公开课程；1：加密课程；2：收费课程,
+		brief：//课程摘要
+		study_total: //学习次数,
+		price: //优惠价,
+		origin_price: //原价,
+		plan_num: //系列课计划总课程数,
+		enroll_total: //报名人数,
+		begin_time: //课程开始时间,
+		enroll_max_num: //开班人数,
+		alias: //讲师昵称,
+		begin_enroll_time: //课程开始报名时间,
+		end_enroll_time: //课程截止报名时间,
+		enroll_end_state: //特训班报名是否已截止 1是 0否,
+		update_total: //系列课已更新课程数
+		begin_time_ymd:	//课程开始时间--年月日格式
+		end_enroll_time_ymd:	//课程截止报名时间--年月日格式
+		enroll_percent：	//已报名人数占比
+	},
+],
+msg: ""
+}
+
+
+
+
+
+
+99学院首页--精品课程
+
+/College/getCollegeFineCourse
+
+需要参数：
+page：页码
+limit：每页条数
+
+return:  
+{
+code: 200,
+data: [
+	{
+		id: 8640,
+		relevanceId: 8640,	//跳转课程id
+		type: 2,	//课程类型，1为专题课程，2为系列课程
+		form: 1,	//课程形式，1为图文语音（普通），2为视频直播
+		level: 0,	//课程等级 0：免费公开课程；1：加密课程；2：收费课程,
+		class_name: "后台创建的系列课",	//课程名称
+		src_img: "http://oqt46pvmm.bkt.clouddn.com/Fo9glbqF9ItYufP76aqsbiNGD_a9",	//课程封面图
+		brief: "",	//课程简介
+		study_total: 22,	//学习次数
+		price: "",	//优惠价
+		origin_price: "",	//原价
+		plan_num: 5,	//系列课计划总课程数
+		enroll_total: 1,	//报名人数
+		begin_time: "2018-05-14 08:30:00",	//课程开始时间
+		enroll_max_num: 0,	//开班人数
+		alias: "东方不败",	//讲师昵称
+		begin_enroll_time: "2018-05-11 19:28:56",	//课程开始报名时间
+		end_enroll_time: "0000-00-00 00:00:00",	//课程截止报名时间
+		isTop: 1,	//是否置顶 1：是 0：否
+		update_total: 1	//系列课已更新课程数
+	},
+],
+msg: ""
+}
+
+
+
+
+
+
+系列课页--系列课精品、基础、高级接口
+
+/College/getFineSeriesCourse
+
+需要参数：
+page：页码
+limit：每页条数
+
+return:  
+{
+code: 200,
+data: [
+	{
+		id : id
+		imgUrl : //图片地址
+		title ： //标题
+		relevanceType ： //跳转类型	4：专题课；9：系列课；10：特训班预告页；11：特训班详情页；12：特训班回顾页
+		relevanceId ：//跳转课程id,
+		type: //课程类型，1为专题课程，2为系列课程，3为特训课,
+		form: //课程形式，1为图文语音（普通），2为视频直播,
+		level: //课程等级 0：免费公开课程；1：加密课程；2：收费课程,
+		brief：//课程摘要
+		study_total: //学习次数,
+		price: //优惠价,
+		origin_price: //原价,
+		plan_num: //系列课计划总课程数,
+		enroll_total: //报名人数,
+		begin_time: //课程开始时间,
+		enroll_max_num: //开班人数,
+		alias: //讲师昵称,
+		begin_enroll_time: //课程开始报名时间,
+		end_enroll_time: //课程截止报名时间,
+		enroll_end_state: //特训班报名是否已截止 1是 0否,
+		update_total: //系列课已更新课程数
+		begin_time_ymd:	//课程开始时间--年月日格式
+		end_enroll_time_ymd:	//课程截止报名时间--年月日格式
+		enroll_percent：	//已报名人数占比
+	},
+],
+msg: ""
+}
+
+
+
+
+
+
+公共直播间页--推拉流地址状态接口
+
+/Index/liveStream
+
+需要参数：
+无
+
+return：
+{
+code: 200,
+data: {
+	push_url: "rtmp://push.test.99cj.com.cn/live/1_1000009999?user=99cj&passwd=hc992017win",	//推流地址
+	pull_url: "http://pull.test.99cj.com.cn/live/1_1000009999/playlist.m3u8",	//拉流地址
+	state: 2	//直播状态： 1 开播	2 停播
+},
+msg: ""
+}
+
+
+
+
+
+获取公告
+
+/Index/getNotice
+
+需要参数：
+无
+
+return:
+{
+code: 200,
+data: [
+{
+	id: 44,
+	title: "系统优化升级，不便之处，敬请原谅",	//公告标题
+	content: "系统优化升级，不便之处，敬请原谅"		//公告内容
+}
+],
+msg: ""
+}
+
+
+
+
+购买记录接口
+
+/Pay/buyRecord
+
+需要参数：
+user_id：用户id
+page：页码
+
+return：
+{
+code: 200,
+data: [
+{
+	id: 3284,
+	class_name: "11.17視頻",	//课程名称
+	total_fee: 2,	//课程价格
+	src_img: "http://test.talk.lexinamc.cn/images/default/course_back_img_4.png",	//课程图片
+	type: 1,	//课程类型：1为专题课程，2为系列课程，3为特训课
+	form: 2,	//课程形式：1为图文语音（普通），2为视频直播
+	status: 4,	//课程状态：1 正常状态，4 已结束
+},
+],
+msg: ""
+}
+
+
+
+
+
+关注接口
+
+/Index/focus
+
+需要参数：
+user_id：用户id
+teacher_id：讲师id
+type：关注或取关 1关注 0取消关注
+
+return:
+{
+	code: 200,
+	data: 1018, //关注总人数
+	msg: "关注成功"
+}
+
+
+
+
+
+
+讲师列表
+
+/Index/liveTeacherList
+
+需要参数：
+page：页码
+limit：每页条数
+
+return:
+user_id: 用户id,
+alias: "讲师昵称",
+head_add: "讲师头像"
+
+
+
+
+
+
+
+Live直播列表
+
+/Index/liveList
+
+需要参数：
+page：页码
+limit：每页条数
+
+return；
+{
+	user_id: 1707148,
+	alias: "讲师昵称",
+	head_add: "讲师头像",
+	theme: "投资大揭秘",//今日主题
+	focus_num: 2346,//关注人数
+	onlineNum: 188898,//在线人数
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>你拿什么跟别人比拼</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="btn">
+            <img src="images/01.gif" alt="" onclick="popCode()">
+        </div>
+        <div class="link">
+            <a href="http://www.99lt.com/"><img src="images/button3.png" alt=""></a>
+            
+        </div>
+    </header>
+    <div class="center-box">
+
+        <div class="boxs">
+            <div class="box">
+                <img src="images/c01.png" alt="" class="img-l">
+                <ul>
+                    <li>
+                        <img src="images/c02.png" alt="">
+                        <p>当互联网成为时代的主流，每个人需要具备的就是属于自己的互联网产品！</p>
+                    </li>
+                    <li>
+                        <img src="images/c03.png" alt="">
+                        <p>在互联网战场，缺的不是战术，而是专属定制的互联网产品！</p>
+                    </li>
+                    <li>
+                        <img src="images/c04.png" alt="">
+                        <p>一个小程序足以点燃你的梦想！</p>
+                    </li>
+                    <li>
+                        <img src="images/c05.png" alt="">
+                        <p>这样做让企业更具生命力！</p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <section class="footer">
+        <section class="box">
+            <h1>
+                专注应用定制开发，全网最佳开发平台
+            </h1>
+            <h2>
+                提供主流开发服务，懂您所需，做您想要的！您的需求，我们懂！
+            </h2>
+            <ul>
+                <li onclick="popCode()">
+                    <section>
+                        <h5>ios开发</h5>
+                        <p>专注高端系统开发，设计布局精雕细磨有档次</p>
+                    </section>
+                    <span >
+
+                    </span>
+                </li>
+                <li onclick="popCode()">
+                    <section>
+                        <h5>Android开发</h5>
+                        <p>主流android系统，一站式服务，更方便，更安全</p>
+                    </section>
+                    <span>
+
+                    </span>
+                </li>
+                <li onclick="popCode()">
+                    <section>
+                        <h5>微信开发</h5>
+                        <p>公众号及小程序开发，个性化行业解决方案，让微营销更简单</p>
+                    </section>
+                    <span>
+
+                    </span>
+                </li>
+                <li onclick="popCode()">
+                    <section>
+                        <h5>手机网站制作</h5>
+                        <p>响应式布局，HTML5+CSS3设计，最极致的用户体验</p>
+                    </section>
+                    <span>
+
+                    </span>
+                </li>
+                <li onclick="popCode()">
+                    <section>
+                        <h5>商城网站建设</h5>
+                        <p>按需定制，一流的网站体验，顶级的设计布局</p>
+                    </section>
+                    <span>
+
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <div class="txt">
+            <p>地址：广东省广州市越秀区富力新天地中心50层   备案号：粤ICP备18028015号</p>
+            <p>CopyRight©2008-2018 广州玖拾玖度信息科技有限公司 版权所有</p>
+    </div>
+    <!-- 点击的二维码弹窗 -->
+    <div class="v-model">
+        <div class="box">
+            <div>
+                <img src="images/code.png" alt="">
+                <span onclick="closeCode()"></span>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    function popCode() {
+        var model = document.querySelector('.v-model');
+        model.style.display = 'block';
+    }
+
+    function closeCode() {
+        var model = document.querySelector('.v-model');
+        model.style.display = 'none';
+    }
+</script>
+
+</html>

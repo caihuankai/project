@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>团队优势</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/advantage.css">
+    <script src="../js/rem.js"></script>
+</head>
+
+<body>
+    <main class="advantage-container">
+        <nav>
+            <a href="../index.html" >热门业务</a>
+            <a href="case.html">成功案例</a>
+            <a href="" class="active">团队优势</a>
+        </nav>
+        <header class="header">
+            <h1>团队优势</h1>
+            <h4>Advantage</h4>
+            <p>有超过5个主流开发平台，专业的开发制作技术团队</p>
+            <p>覆盖APP，网站，PC软件，</p>
+            <p>微信体系等范畴，服务多家家企业，我们便拥有了</p>
+            <p>自主开发的电商系统，微信商城系统等，</p>
+            <p>并为多家企业设计及开发多款手机APP软件。</p>
+            <a href="tel:02022922445" class="btn">
+                <span>
+                    点击咨询
+                </span>
+            </a>
+        </header>
+        <section class="team-list">
+            <ul class="clearfix">
+                <li>
+                    <img src="../images/about-01.png" alt="" class="cover">
+                    <h4>运营团队</h4>
+                    <p>Operation team</p>
+                </li>
+                <li>
+                    <img src="../images/about-02.png" alt="" class="cover">
+                    <h4>销售团队</h4>
+                    <p>Sales team</p>
+                </li>
+                <li>
+                    <img src="../images/about-03.png" alt="" class="cover">
+                    <h4>技术研发团队</h4>
+                    <p>Technical team</p>
+                </li>
+                <li>
+                    <img src="../images/about-04.png" alt="" class="cover">
+                    <h4>产品策划团队</h4>
+                    <p>Product planning</p>
+                </li>
+
+            </ul>
+        </section>
+        <section class="advantage-part">
+            <div class="title">
+                <span>策划优势</span>
+            </div>
+            <p>我们强调精密的策划，精心的设计，严谨的开发，精确的实施，为客户提供完美的产品和服务。</p>
+            <img src="../images/photo01.png" alt="">
+        </section>
+        <section class="advantage-part">
+            <div class="title">
+                <span>开发优势</span>
+            </div>
+            <p>各类系统开发经验丰富，敢于创新，采用最主流的技术，保证开发进度与质量。</p>
+            <img src="../images/photo02.png" alt="">
+            <img src="../images/photo03.png" alt="">
+        </section>
+
+        <footer class="footer">
+            <section class="box">
+                <img src="../images/qrcode.png" alt="" class="qrCode">
+                <section class="contact">
+                    <p>咨询热线：020-22922445</p>
+                    <p>商务QQ ：3589829734</p>
+                    <a class="later">稍后再说</a>
+                    <a href="tel:02022922445">现在咨询</a>
+                </section>
+                <div class="close-footer"></div>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>
+<script>
+    window.onload = function () {
+        $close = document.getElementsByClassName('close-footer')[0];
+        $footer = document.getElementsByClassName('footer')[0];
+        $container = document.getElementsByClassName('advantage-container')[0];
+        $later = document.getElementsByClassName('later')[0];
+        $close.onclick = function () {
+            $footer.className = 'footer hide';
+            $container.style.paddingBottom = '1rem';
+        }
+        $later.onclick = function () {
+            clearTimeout(timer);
+            $footer.className = 'footer hide';
+            $container.style.paddingBottom = '1rem';
+            var timer = setTimeout(function () {
+                $footer.className = 'footer';
+                $container.style.paddingBottom = '3rem';
+            }, 60000);
+        }
+    }
+</script>

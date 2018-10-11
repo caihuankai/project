@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玖拾玖度企业定制开发</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <main class="index">
+        <header>
+            <img src="images/banner_ben.png" alt="">
+        </header>
+        <nav>
+            <a href="/" class="active">热门业务</a>
+            <a href="./view/case.html">成功案例</a>
+            <a href="./view/advantage.html">团队优势</a>
+        </nav>
+        <section class="item" id="hot">
+            <div>
+                <h1>热门业务</h1>
+                <h2>SERVICE</h2>
+            </div>
+            <div>
+                提供超过五种主流开发服务，ios开发，安卓开发
+            </div>
+            <a href="tel:020-22922445"><span></span>点击咨询</a>
+        </section>
+        <section class="item2">
+            <img src="images/fangan_ben.png" alt="">
+            <ul>
+                <li>
+                    <img src="images/ios_ben.png" alt="">
+                   
+                </li>
+                <li>
+                    <img src="images/android_ben.png" alt="">
+                   
+                </li>
+                <li>
+                    <img src="images/weixin_ben.png" alt="">
+                   
+                </li>
+                <li>
+                    <img src="images/h5_ben.png" alt="" id="success">
+                   
+                </li>
+                <li>
+                    <img src="images/pc_ben.png" alt="">
+                   
+                </li>
+            </ul>
+        </section>
+        <section class="item3" id="menber">
+            <img src="images/kaifaluicheng_ben.png" alt="">
+        </section>
+       
+
+    </main>
+</body>
+
+</html>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+<script>
+    function handleScroll () {//监听滚动条滚动的位置
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+                var header = $('.index header').height();
+                var hot = $('#hot').offset().top;
+                var success = $('#success').offset().top;
+                var menber = $('#menber').offset().top;
+                if (scrollTop > header) {
+                    $('.index nav').css({
+                        'position': 'fixed',
+                        'top': '0px',
+                    })
+                } else {
+                    $('.index nav').css({
+                        'position': 'relative',
+                        'top': '0',
+                    })
+                }
+                // console.log(success + 'ooo' +scrollTop)
+                // if(success>scrollTop > hot){
+                //     $('.index nav a:nth-child(1)').addClass('active').siblings().removeClass('active');
+                   
+                // }else if(menber>scrollTop > success){
+                //     $('.index nav a:nth-child(2)').addClass('active').siblings().removeClass('active');
+                // }else if(scrollTop > menber){
+                //     $('.index nav a:nth-child(3)').addClass('active').siblings().removeClass('active');
+                // }else{
+                //     $('.index nav a:nth-child(1)').addClass('active').siblings().removeClass('active');
+                // }
+            };
+            window.addEventListener('scroll', this.handleScroll)
+</script>

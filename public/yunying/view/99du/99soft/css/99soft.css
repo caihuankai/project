@@ -1,0 +1,419 @@
+body {
+    min-width: 1180px;
+}
+
+.banner {
+    min-height: 428px;
+}
+.banner .slides .slides-list .slides-item img {
+    width: 100%;
+    min-height: 428px;
+}
+
+.information-con-list .con-list .con-item {
+    display: block;
+}
+.information-wrap .information-title-list .title-list li.active {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    z-index: 9;
+}
+.information-wrap .information-title-list .title-list li.active a {
+    background: url("../images/information-title.png")repeat-x top;
+    z-index: 10;
+}
+/* line 114, ../sass/information.scss */
+.information-wrap .information-title-list .title-list .item-html5 {
+    width: 209px;
+}
+/* line 116, ../sass/information.scss */
+.information-wrap .information-title-list .title-list .item-html5 a {
+    width: 211px;
+}
+/* line 120, ../sass/information.scss */
+.information-wrap .information-title-list .title-list .item-web {
+    width: 139px;
+}
+/* line 122, ../sass/information.scss */
+.information-wrap .information-title-list .title-list .item-web a {
+    width: 141px;
+}
+
+.top-articles .top-time ul li.active {
+    border-top: 1px solid #ff7852;
+}
+
+.tab-pane {
+    display: none!important;
+}
+.tab-pane.active {
+    display: block!important;
+}
+
+.display-case-main .details-content .d-img img{
+    width: 750px;
+    height: auto;
+    margin: 0;
+    float: left;
+}
+
+#page_message li i{
+    color: #fff;
+    line-height: 24px;
+}
+
+.home-main .home-main-wrap .appcase .appcase-warp .appcase-title-list a{
+    min-width: 120px;
+}
+
+
+.home-main .home-main-wrap .faq-comment .faq-comment-wrap .left-faq ul li p{
+    background-position: left top;
+    height: auto;
+}
+
+.top-news-con .right h4 {
+    overflow: hidden;
+    height: 20px;
+}
+
+
+.article-con .summery{
+    padding: 1em;
+    background-color: #efefef;
+    text-decoration: initial;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.detail-left .detail-left-wrap .article-info-share .info-right{
+    float: right;
+}
+
+/* line 63, ../sass/information-detail.scss */
+.share-icons {
+    float: right;
+    font-size: 14px;
+    color: #3f3f3f;
+    min-width: 300px;
+}
+
+#detailsleft .share-icons{
+    float: left;
+}
+/* line 67, ../sass/information-detail.scss */
+.share-icons .jtico {
+    cursor: pointer;
+    background: url("../images/icon/share_icons.png") no-repeat center;
+    display: block;
+    height: 27px;
+    opacity: 1;
+    width: 27px;
+    margin-right: 5px;
+}
+.share-icons td{
+    color: #fff;
+}
+/* line 74, ../sass/information-detail.scss */
+.share-icons .jtico:hover {
+    opacity: 1;
+}
+/* line 78, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_tsina {
+    background-position: 0 0;
+}
+/* line 81, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_tqq {
+    background-position: -35px 0;
+}
+/* line 84, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_qzone {
+    background-position: -70px 0;
+}
+/* line 87, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_douban {
+    background-position: -105px 0;
+}
+/* line 90, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_renren {
+    background-position: -140px 0;
+}
+/* line 93, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_weixin {
+    background-position: -175px 0;
+}
+/* line 96, ../sass/information-detail.scss */
+.share-icons .jtico.jtico_jiathis {
+    background-position: -210px 0;
+}
+/* line 101, ../sass/information-detail.scss */
+
+
+#editor h1,
+#editor h2,
+#editor h3,
+#editor h4,
+#editor h5,
+#editor b,
+#editor strong
+{
+    font-weight: bold;
+    text-align: left;
+}
+
+#editor h1{
+    font-size: 24px
+}
+#editor h2{
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+#editor h3{
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#editor h4{
+    line-height: 30px;
+    font-size: 16px
+}
+#editor h5{
+    font-size: 16px
+}
+
+#editor p{
+    margin: 28px 0;
+    /*text-indent: 2em;*/
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+#editor u{
+    text-decoration: underline;
+}
+#editor i{
+    font-style: italic;
+}
+#editor img {
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.detail-right-item ul li a{
+    overflow: hidden;
+}
+
+.case-sencil ul li .case-sencil-right h4 a{
+    height: 14px;
+    display: block;
+    overflow: hidden;
+}
+
+#other-case.case-sencil ul li .case-sencil-right h4 a{
+    font-size: 14px;
+}
+
+.service-wrap .service-title h1{
+    color: #3f3f3f;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.map-wrap {
+    height: 800px;
+    position: relative;
+    z-index: 1;
+}
+.map-wrap .map-content {
+    margin-top: 65px;
+    position: relative;
+    z-index: 3;
+}
+.map-wrap .map-content .map-list li {
+    height: 40px;
+    margin-bottom: 40px;
+}
+.map-wrap .map-content .map-list li .left-title {
+    float: left;
+    margin-right: 65px;
+    text-align: right;
+    width: 175px;
+}
+.map-wrap .map-content .map-list li .left-title a {
+    font-size: 18px;
+    line-height: 26px;
+}
+.map-wrap .map-content .map-list li .left-title .line {
+    border-bottom: 2px solid #ff7852;
+    display: block;
+    height: 8px;
+    margin-left: 127px;
+    width: 50px;
+}
+.map-wrap .map-content .map-list li .right-con {
+    float: left;
+    width: 960px;
+}
+.map-wrap .map-content .map-list li .right-con a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 35px;
+}
+.map-wrap .contact-us-bg {
+    background-color: #f5f5f5;
+    height: 100%;
+    left: 50%;
+    margin-left: -960px;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+}
+
+.about-wrap .title-top .title-con h2,
+.about-wrap .title-top .title-con h1{
+    color: #3f3f3f;
+    font-size: 32px;
+    font-weight: bold;
+}
+/* 首页客户 */
+.customer_left {
+    width: 150px;
+    float:left;
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+    border-right: 1px #ccc solid;
+}
+.customer_div{
+    width: 100%;
+    background: #fff;
+    height: 200px;
+    padding-top: 50px;
+}
+.cus_data {
+    width: 1180px;
+    margin: 0 auto;
+}
+.cus_ke{
+    font-size: 30px;
+}
+.cus_cli {
+    font-size: 20px;
+}
+.customer_right {
+    float: left;
+    width: 930px;
+    margin-left: 55px;
+}
+.customer_right ul li {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.weix_rem_list {
+    margin-top: 100px;
+    background: #f5f5f5;
+    padding: 20px 0 40px 0;
+    position: relative;
+    z-index: 1;
+}
+.weix_rem_list ul {
+    width: 1000px;
+    margin: auto;
+}
+.weix_rem_list h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 35px 0;
+}
+.weix_rem_list li {
+    width: 333px;
+    float: left;
+    margin: 0px 0px 17px 0px;
+    color: #cdcdcd;
+}
+#platform-question.platform-question.page-newpane {
+    padding-bottom: 100px;
+    height:700px;
+}
+#platform-question.platform-question .subject-title  p.page-consult {
+    margin-top:55px;
+    margin-bottom:60px;
+}
+.page_consultform input {
+    width: 570px;
+    height:45px;
+    padding:0 5px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 23px;
+}
+.page_consultform {
+    width:600px;
+    margin: 0 auto;
+}
+.page_consultform input:focus {
+    outline: none;
+    border: 1px solid #ff7852;
+}
+.page_consultform textarea {
+    width: 560px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 23px;
+}
+.page_consultform textarea:focus {
+    outline: none;
+    border: 1px solid #ff7852;
+}
+#page_consultform_submit {
+    width: 572px;
+    height:45px;
+    padding:0 5px;
+    border: none;
+    margin-bottom: 23px;
+    background: #ff7852;
+    font-size: 16px;
+    color: #fff;
+}
+.develop-type-wrap .platform-case .platform-case-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    height: 670px;
+    width: 1920px;
+    background: #f5f5f5;
+}
+.develop-type-wrap .platform-case {
+    position: relative;
+    height: 670px;
+    z-index: 1;
+}
+.enterprise-app-wrap .platform-case .platform-case-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    height: 670px;
+    width: 1920px;
+    background: #f5f5f5;
+}
+.enterprise-app-wrap .platform-case {
+    position: relative;
+    height: 670px;
+    z-index: 1;
+}
+.weix_rem_list .platform-case-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    height: 300px;
+    width: 1920px;
+    background: #f5f5f5;
+    z-index: -1;
+}

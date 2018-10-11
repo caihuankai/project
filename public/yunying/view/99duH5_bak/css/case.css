@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+}
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.case-container nav a.active{
+    background: #e03a00;
+}
+.case-container nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    height: .9rem /* 90/100 */;
+    align-items: center;
+    z-index: 111;
+}
+.clearfix{
+    zoom:1;
+}
+.case-container nav a{
+    flex:1;
+    text-align: center;
+    background: #ff5c26;
+    height: 100%;
+    line-height: 0.9rem;
+    color:#fff;
+}
+.case-container .header{
+    overflow: hidden;
+    padding-top: .9rem;
+    padding-bottom: .63rem;
+    text-align: center;
+}
+.case-container{
+    max-width: 750px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    padding-top: .88rem;
+}
+.case-container *{
+    margin: 0;
+}
+.case-container .header{
+    height: 8.04rem;
+    background: url("../images/case_bg.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+.case-container .header h1{
+    margin-top:.9rem;
+    font-size: .6rem;
+}
+.case-container .header h4{
+    font-size: .24rem;
+    margin-top: .18rem;
+    margin-bottom: .4rem;
+}
+.case-container .header p{
+    font-size: .24rem;
+}
+.case-container .header .btn{
+    width: 4.6rem;
+    height: .88rem;
+    background: #ffffff;
+    border-radius: .44rem;
+    color: #ff6935;
+    font-size: .36rem;
+    margin:.5rem auto 0 auto;
+    line-height: .88rem;
+    display: block;
+}
+.case-container .header .btn>span:before{
+    content: '';
+    display: inline-block;
+    width: .44rem;
+    height: .44rem;
+    background: url("../images/phone_yellow_icon.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-right: .16rem;
+    vertical-align: sub;
+}
+.case-list{
+    padding: 0 .24rem;
+    position: relative;
+    margin-top: -.34rem;
+}
+.case-list ul{
+    width: 100%;
+    padding: 0;
+}
+.case-list ul li{
+    list-style-type: none;
+    background: #ffffff;
+    width: calc((100% - .24rem)/2);
+    float: left;
+    box-sizing: border-box;
+    padding: .1rem;
+    margin-bottom: .24rem;
+}
+.case-list ul li:nth-child(2n){
+    margin-left: .24rem;
+}
+.case-list ul li .cover{
+    width: 100%;
+    display: block;
+}
+.case-list ul li .des{
+    padding: .14rem;
+}
+.case-list ul li .des>h3{
+    font-size: .28rem;
+    color: #353535;
+    margin-top: .1rem;
+    margin-bottom: .2rem;
+}
+.case-list ul li .des>p{
+    text-indent: 2em;
+    font-size: .24rem;
+    color: #888888;
+    min-height: 2.7rem;
+}
+/*.case-list ul li:nth-child(1) .des>p,
+.case-list ul li:nth-child(2) .des>p{
+    min-height: 1.56rem;
+}
+.case-list ul li:nth-child(3) .des>p,
+.case-list ul li:nth-child(4) .des>p{
+    min-height: 2.34rem;
+}
+.case-list ul li:nth-child(5) .des>p,
+.case-list ul li:nth-child(6) .des>p{
+    min-height: 1.56rem;
+}*/
+.case-list ul .more-content li:nth-child(1) .des>h3,
+.case-list ul .more-content li:nth-child(2) .des>h3{
+    font-size: .26rem;
+}
+/*.case-list ul li:nth-child(7) .des>p,
+.case-list ul li:nth-child(8) .des>p{
+    min-height: 1.3rem;
+}
+.case-list ul li:nth-child(9) .des>p,
+.case-list ul li:nth-child(10) .des>p{
+    min-height: 1.56rem;
+}
+.case-list ul li:nth-child(11) .des>p,
+.case-list ul li:nth-child(12) .des>p{
+    min-height: 1.3rem;
+}*/
+.case-list ul .more-content {
+    display: none;
+}
+.case-list ul .more-content.show{
+    display: block;
+}
+.case-list .more{
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    background: #ffffff;
+    font-size: .36rem;
+    color: #ff6935;
+    text-align: center;
+    margin-bottom: .59rem;
+}
+.case-list .more > span:before{
+    content: '';
+    display: inline-block;
+    width: .3rem;
+    height: .3rem;
+    background: url("../images/unfold_icon.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100% ;
+    margin-right: .16rem;
+}
+.client-container{
+    background: #ffffff;
+}
+.client-container .client-header{
+    text-align: center;
+    overflow: hidden;
+}
+.client-container .client-header h3{
+    font-size: .6rem;
+    color: #353535;
+    margin-top: .9rem;
+}
+.client-container .client-header h5{
+    font-size: .28rem;
+    color: #353535;
+    margin-top: .18rem;
+    margin-bottom: .39rem;
+}
+.client-container .client-header p{
+    font-size: .24rem;
+    color: #353535;
+    margin-bottom: .49rem;
+}
+.client-container .client-list{
+    padding: 0 .16rem;
+}
+.client-container .client-list ul{
+    padding-bottom:.83rem;
+}
+.client-container .client-list ul li {
+    margin: 0 .08rem;
+    width:calc((100% - .48rem)/3);
+    float: left;
+}
+.client-container .client-list ul li img{
+    width: 100%;
+    margin-bottom: .16rem;
+}
+.cover-container{
+    background: url("../images/range_bg.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.cover-container .cover-header{
+    color: #ffffff;
+    padding-bottom: .56rem;
+    text-align: center;
+    overflow: hidden;
+}
+.cover-container .cover-header h1{
+    font-size: .6rem;
+    margin-top: .9rem;
+}
+.cover-container .cover-header h5{
+    font-size: .28rem;
+    margin-top: .18rem;
+    margin-bottom: .39rem;
+}
+.cover-container .cover-header p{
+    font-size: .24rem;
+}
+.cover-container .cover-list{
+    padding: 0 .16rem;
+    padding-bottom: .76rem;
+}
+.cover-container .cover-list ul{
+}
+.cover-container .cover-list .cover-more{
+    display: none;
+}
+.cover-container .cover-list .cover-more.show{
+    display: block;
+}
+.cover-container .cover-list ul li {
+    margin: 0 .08rem;
+    width:calc((100% - .48rem)/3);
+    float: left;
+}
+.cover-container .cover-list ul li img{
+    width: 100%;
+    margin-bottom: .16rem;
+}
+.cover-container .cover-list .cover-more-btn{
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    background: #ffffff;
+    font-size: .36rem;
+    color: #ff6935;
+    text-align: center;
+    margin-top: .08rem;
+}
+.cover-container .cover-list .cover-more-btn > span:before{
+    content: '';
+    display: inline-block;
+    width: .3rem;
+    height: .3rem;
+    background: url("../images/unfold_icon.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100% ;
+    margin-right: .16rem;
+}
