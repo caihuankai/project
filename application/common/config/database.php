@@ -16,15 +16,15 @@ return [
 
 
     //测试库 -----------------------------开始
-    'hostname'       => '123.103.74.8',
+    'hostname'       => '47.244.25.135',
     // 数据库名
     'database'       => 'talk_admin',
     // 用户名
-    'username'       => 'talk_rw',
+    'username'       => 'root',
     // 密码
-    'password'       => 'm7ZokXmoLAk8yQ13',
+    'password'       => '123456',
     // 端口
-    'hostport'       => '3308',
+    'hostport'       => '3306',
     //测试库 -----------------------------结束
 
 
