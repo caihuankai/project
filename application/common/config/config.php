@@ -264,11 +264,11 @@ return [
     // +----------------------------------------------------------------------
     'bs_db_config' => [
         'type' => 'mysql',
-        'hostname' => '123.103.74.8',
+        'hostname' => '47.244.25.135',
         'database' => 'talk',
-        'username' => 'talk_rw',
-        'password' => 'm7ZokXmoLAk8yQ13',
-        'hostport' => '3308',
+        'username' => 'root',
+        'password' => '123456',
+        'hostport' => '3306',
         'prefix' => 'talk_',
         // Query类
         'query'          => \ThinkPHP\Query::class,
